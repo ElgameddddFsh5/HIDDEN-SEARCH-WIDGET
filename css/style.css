@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  font-family: "Roboto", sans-serif;
+}
+main section .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main section .search input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  width: 50px;
+  transition: 0.3s ease-in-out;
+}
+main section .container .active {
+  font-size: 19px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+  width: 52px;
+}
+/* لو لازقين في بعض كدة الكلاس ده معناه انك بتقوله الايليمنت ده حطلي فيه الكلاس انما لو فيه مسافة يبقى بتقوله فيه ابن جواك حطلي فيه الكلاس */
+#search.active {
+  width: 300px;
+}
+main section .container i {
+  background-color: #fff;
+  font-size: 22px;
+  padding: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
